@@ -69,6 +69,12 @@
                             <constraint firstItem="T5G-hp-ijf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="z48-01-gQu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="qVT-iN-lB2" id="EW3-PN-i51"/>
+                        <outlet property="loginButton" destination="Vv8-HR-g6l" id="BcA-CQ-We2"/>
+                        <outlet property="loginEnabledLabel" destination="T5G-hp-ijf" id="Jf7-fI-6bF"/>
+                        <outlet property="passwordTextField" destination="UeW-aa-1TX" id="PxP-Ml-QHG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
