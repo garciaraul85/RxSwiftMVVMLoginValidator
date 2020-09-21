@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F8A81EB1251922E5006C8511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A81EAF251922E5006C8511 /* Main.storyboard */; };
 		F8A81EB3251922E7006C8511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A81EB2251922E7006C8511 /* Assets.xcassets */; };
 		F8A81EB6251922E7006C8511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A81EB4251922E7006C8511 /* LaunchScreen.storyboard */; };
+		F8CE65FD251967A600D926C8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE65FC251967A600D926C8 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F8A81EB2251922E7006C8511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A81EB5251922E7006C8511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A81EB7251922E7006C8511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8CE65FC251967A600D926C8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FCFBF78CEC35EAFD35506326 /* Pods_RxSwiftMVVMLoginValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftMVVMLoginValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				5A8EA69C6184457A8FBB9307 /* Pods-RxSwiftMVVMLoginValidator.debug.xcconfig */,
 				244CA4B1FA4AE673233890A9 /* Pods-RxSwiftMVVMLoginValidator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,32 @@
 		F8A81EA8251922E5006C8511 /* RxSwiftMVVMLoginValidator */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE65FB2519678500D926C8 /* view */,
+				F8CE65FA2519677D00D926C8 /* viewmodel */,
 				F8A81EA9251922E5006C8511 /* AppDelegate.swift */,
 				F8A81EAB251922E5006C8511 /* SceneDelegate.swift */,
-				F8A81EAD251922E5006C8511 /* ViewController.swift */,
-				F8A81EAF251922E5006C8511 /* Main.storyboard */,
 				F8A81EB2251922E7006C8511 /* Assets.xcassets */,
-				F8A81EB4251922E7006C8511 /* LaunchScreen.storyboard */,
 				F8A81EB7251922E7006C8511 /* Info.plist */,
 			);
 			path = RxSwiftMVVMLoginValidator;
+			sourceTree = "<group>";
+		};
+		F8CE65FA2519677D00D926C8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE65FC251967A600D926C8 /* LoginViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		F8CE65FB2519678500D926C8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F8A81EB4251922E7006C8511 /* LaunchScreen.storyboard */,
+				F8A81EAD251922E5006C8511 /* ViewController.swift */,
+				F8A81EAF251922E5006C8511 /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8CE65FD251967A600D926C8 /* LoginViewModel.swift in Sources */,
 				F8A81EAE251922E5006C8511 /* ViewController.swift in Sources */,
 				F8A81EAA251922E5006C8511 /* AppDelegate.swift in Sources */,
 				F8A81EAC251922E5006C8511 /* SceneDelegate.swift in Sources */,
