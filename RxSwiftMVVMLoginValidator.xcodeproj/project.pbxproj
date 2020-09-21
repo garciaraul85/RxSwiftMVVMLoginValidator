@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82CC6CC23235ADEB3FB9227C /* Pods_RxSwiftMVVMLoginValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFBF78CEC35EAFD35506326 /* Pods_RxSwiftMVVMLoginValidator.framework */; };
 		F8A81EAA251922E5006C8511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A81EA9251922E5006C8511 /* AppDelegate.swift */; };
 		F8A81EAC251922E5006C8511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A81EAB251922E5006C8511 /* SceneDelegate.swift */; };
 		F8A81EAE251922E5006C8511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A81EAD251922E5006C8511 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244CA4B1FA4AE673233890A9 /* Pods-RxSwiftMVVMLoginValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVMLoginValidator.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftMVVMLoginValidator/Pods-RxSwiftMVVMLoginValidator.release.xcconfig"; sourceTree = "<group>"; };
+		5A8EA69C6184457A8FBB9307 /* Pods-RxSwiftMVVMLoginValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVMLoginValidator.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftMVVMLoginValidator/Pods-RxSwiftMVVMLoginValidator.debug.xcconfig"; sourceTree = "<group>"; };
 		F8A81EA6251922E5006C8511 /* RxSwiftMVVMLoginValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftMVVMLoginValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A81EA9251922E5006C8511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A81EAB251922E5006C8511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		F8A81EB2251922E7006C8511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A81EB5251922E7006C8511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A81EB7251922E7006C8511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFBF78CEC35EAFD35506326 /* Pods_RxSwiftMVVMLoginValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftMVVMLoginValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CC6CC23235ADEB3FB9227C /* Pods_RxSwiftMVVMLoginValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55108D41C05E1E606F340F2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A8EA69C6184457A8FBB9307 /* Pods-RxSwiftMVVMLoginValidator.debug.xcconfig */,
+				244CA4B1FA4AE673233890A9 /* Pods-RxSwiftMVVMLoginValidator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A05A0F7723E12C4A7C65418D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCFBF78CEC35EAFD35506326 /* Pods_RxSwiftMVVMLoginValidator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8A81E9D251922E5006C8511 = {
 			isa = PBXGroup;
 			children = (
 				F8A81EA8251922E5006C8511 /* RxSwiftMVVMLoginValidator */,
 				F8A81EA7251922E5006C8511 /* Products */,
+				55108D41C05E1E606F340F2C /* Pods */,
+				A05A0F7723E12C4A7C65418D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8A81EBA251922E7006C8511 /* Build configuration list for PBXNativeTarget "RxSwiftMVVMLoginValidator" */;
 			buildPhases = (
+				D68E8364128781A6A51DABF3 /* [CP] Check Pods Manifest.lock */,
 				F8A81EA2251922E5006C8511 /* Sources */,
 				F8A81EA3251922E5006C8511 /* Frameworks */,
 				F8A81EA4251922E5006C8511 /* Resources */,
+				D158F0B4AB83959E65D6BD37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D158F0B4AB83959E65D6BD37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMVVMLoginValidator/Pods-RxSwiftMVVMLoginValidator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMVVMLoginValidator/Pods-RxSwiftMVVMLoginValidator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMVVMLoginValidator/Pods-RxSwiftMVVMLoginValidator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68E8364128781A6A51DABF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftMVVMLoginValidator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8A81EA2251922E5006C8511 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		F8A81EBB251922E7006C8511 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8EA69C6184457A8FBB9307 /* Pods-RxSwiftMVVMLoginValidator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		F8A81EBC251922E7006C8511 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244CA4B1FA4AE673233890A9 /* Pods-RxSwiftMVVMLoginValidator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
