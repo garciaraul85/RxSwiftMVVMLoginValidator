@@ -10,14 +10,16 @@ import RxSwift
 import RxRelay
 
 struct LoginViewModel {
-    var emailText = BehaviorRelay<String>(value: "")
-    var passwordText = BehaviorRelay<String>(value: "")
+    var emailText = PublishSubject<String>()
+    var passwordText = PublishSubject<String>()
     
     var isValid: Observable<Bool> {
-        return Observable.combineLatest(emailText.asObservable(), passwordText.asObservable()) {
+        return Observable.combineLatest(
+            emailText.asObservable().startWith(""),
+            passwordText.asObservable().startWith("")) {
             email, password in
             email.count >= 3 && password.count >= 3
-        }
+        }.startWith(false)
     }
     
 }
